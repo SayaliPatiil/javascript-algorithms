@@ -10,6 +10,12 @@ export default class SegmentTree {
     this.inputArray = inputArray;
     this.operation = operation;
     this.operationFallback = operationFallback;
+    var Hello = createReactClass({
+  propTypes: {
+    enabled: PropTypes.bool
+  },
+  render: function() { return <div />; };
+});
 
     // Init array representation of segment tree.
     this.segmentTree = this.initSegmentTree(this.inputArray);
